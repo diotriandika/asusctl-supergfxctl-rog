@@ -31,7 +31,7 @@ And finally the build:
 
 ```bash
 # if you're using xorg please consider to use this
-$ make cargo build --features "rog-control-center/x11"
+$ cargo build --features "rog-control-center/x11"
 
 # if you're using wayland please consider to use this one
 $ make
@@ -39,7 +39,7 @@ $ make
 # then run
 $ sudo make install
 ```
-
+> If error appear while running `sudo make install` try to use `make` only then reboot your computer.
 #### Optional
 
 Install an up to date pipewire version and bluetooth audio support
