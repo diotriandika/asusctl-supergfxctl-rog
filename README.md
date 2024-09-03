@@ -30,7 +30,7 @@ $ cd asusctl
 And finally the build:
 
 ```bash
-# if using xorg please consider to use this
+# if you're using xorg please consider to use this
 $ make cargo build --features "rog-control-center/x11"
 
 # if you're using wayland please consider to use this one
