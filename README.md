@@ -40,6 +40,16 @@ $ make
 $ sudo make install
 ```
 
+#### Optional
+
+Install an up to date pipewire version and bluetooth audio support
+
+```bash
+sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
+sudo apt install pipewire
+sudo apt install libspa-0.2-bluetooth
+```
+
 References:
 - https://www.reddit.com/r/pop_os/comments/10feq40/asusctl_on_pop_os/
 - https://gist.github.com/vijay-prema/cfcf8cc4085663b7bb48f34172c10629
