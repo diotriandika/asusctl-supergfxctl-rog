@@ -35,6 +35,8 @@ $ make cargo build --features "rog-control-center/x11"
 
 # if you're using wayland please consider to use this one
 $ make
+
+# then run
 $ sudo make install
 ```
 
