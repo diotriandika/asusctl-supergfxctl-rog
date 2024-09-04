@@ -1,7 +1,7 @@
 # asusctl-supergfxctl-rog
-Catatan Instalasi &amp; Manual Guide Asusctl &amp; Supergfxctl
+Notes for `asusctl` and `supergfxctl` tools
 
-## Instalasi Asusctl di Ubuntu 24.04
+## Asusctl Installation on Ubuntu 24.04 (ROG Zephyrus G15)
 First, Install all utilities and depedencies that we'll needed.
 
 ```bash
