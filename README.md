@@ -2,32 +2,31 @@
 Catatan Instalasi &amp; Manual Guide Asusctl &amp; Supergfxctl
 
 ## Instalasi Asusctl di Ubuntu 24.04
-First, let's install the utilities we'll be working with:
+First, Install all utilities and depedencies that we'll needed.
 
 ```bash
 $ sudo apt-get install build-essential make cmake git curl clang libudev-dev libudev-dev libgtk-3-dev libinput-dev libgbm-dev libsystemd-dev libseat-dev
 ```
 
-The second step is to install the Rustlang:
+Next, install Rustlang.
 
 ```bash
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-
-Next:
+And run command below to configuring the PATH environment variable
 
 ```bash
 $ source "$HOME/.cargo/env"
 ```
 
-We clone the repository and go to it:
+Now clone from the asusctl repository and move to asusctl directory
 
 ```bash
 $ git clone https://gitlab.com/asus-linux/asusctl.git
 $ cd asusctl
 ```
 
-And finally the build:
+Lastly build with `cargo build` or `make`
 
 ```bash
 # if you're using xorg please consider to use this
@@ -39,7 +38,10 @@ $ make
 # then run
 $ sudo make install
 ```
-> If error appear while running `sudo make install` try to use `make` only then reboot your computer.
+> If error appear while running `sudo make install` try to use `make` instead of `cargo build` then reboot your computer.
+> If the issue persist or rog-control-center wont open, try to switch to wayland then back to xorg.
+
+
 #### Optional
 
 Install an up to date pipewire version and bluetooth audio support
